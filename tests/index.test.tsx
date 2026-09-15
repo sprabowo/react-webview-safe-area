@@ -5,10 +5,10 @@ import { SafeAreaProvider, SafeAreaView, useSafeArea } from '../src/index'
 
 const setEnvVariables = (top = '0px', right = '0px', bottom = '0px', left = '0px') => {
   const root = document.documentElement
-  root.style.setProperty('--safe-top', top)
-  root.style.setProperty('--safe-right', right)
-  root.style.setProperty('--safe-bottom', bottom)
-  root.style.setProperty('--safe-left', left)
+  root.style.setProperty('--rw-safe-top', top)
+  root.style.setProperty('--rw-safe-right', right)
+  root.style.setProperty('--rw-safe-bottom', bottom)
+  root.style.setProperty('--rw-safe-left', left)
 }
 
 function TestConsumer() {

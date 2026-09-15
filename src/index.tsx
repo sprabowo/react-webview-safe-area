@@ -30,10 +30,10 @@ const getInsets = (fallback: EdgeInsets): EdgeInsets => {
   const parsePx = (val: string) => parseInt(val.replace('px', ''), 10) || 0
 
   return {
-    top: Math.max(parsePx(rootStyle.getPropertyValue('--safe-top')), fallback.top),
-    right: Math.max(parsePx(rootStyle.getPropertyValue('--safe-right')), fallback.right),
-    bottom: Math.max(parsePx(rootStyle.getPropertyValue('--safe-bottom')), fallback.bottom),
-    left: Math.max(parsePx(rootStyle.getPropertyValue('--safe-left')), fallback.left),
+    top: Math.max(parsePx(rootStyle.getPropertyValue('--rw-safe-top')), fallback.top),
+    right: Math.max(parsePx(rootStyle.getPropertyValue('--rw-safe-right')), fallback.right),
+    bottom: Math.max(parsePx(rootStyle.getPropertyValue('--rw-safe-bottom')), fallback.bottom),
+    left: Math.max(parsePx(rootStyle.getPropertyValue('--rw-safe-left')), fallback.left),
   }
 }
 
