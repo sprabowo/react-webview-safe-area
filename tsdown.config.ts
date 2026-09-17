@@ -3,7 +3,7 @@ import { defineConfig } from 'tsdown';
 export default defineConfig({
   entry: ['src/index.tsx'],
   format: ['esm', 'cjs'],
-  dts: true,
+  dts: false,
   clean: true,
   deps: {
     neverBundle: true
